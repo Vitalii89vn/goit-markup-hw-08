@@ -540,11 +540,11 @@ li {
   padding-bottom: 60px;
   background-color: var(--background-color-footer);
 }
-.page-footer > .container {
+.page-footer__container {
   display: flex;
   align-items: baseline;
 }
-.logo-footer {
+.page-footer__logo {
   padding: 0;
   margin: 0 0 20px 0;
   color: var(--second-text-color);
@@ -552,78 +552,63 @@ li {
 .logo--theme-dark {
   color: var(--color-hover-focus);
 }
-.footer-item {
+.page-footer__item {
   margin-bottom: 9px;
 }
-.address-footer,
-.contacts-footer {
+.page-footer__address,
+.page-footer__contacts {
   display: block;
   text-decoration: none;
   font-style: normal;
   line-height: 1.71;
 }
-.contacts-footer.tel {
+.page-footer__contacts--last {
   margin-bottom: 0;
 }
-.contacts-footer {
+.page-footer__contacts {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-footer:focus,
-.contacts-footer:hover {
+.page-footer__contacts:focus,
+.page-footer__contacts:hover {
   color: var(--color-hover-focus);
 }
-.address-footer {
+.page-footer__address {
   color: var(--second-text-color);
 }
-.footer-link {
+.social-network__footer{
   margin-left: 70px;
 }
-.footer-call {
+.social-network__title {
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--second-text-color);
   margin-bottom: 20px;
 }
-.social-network-footer {
+.social-network__list{
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
 }
-.social-network__link-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+.social-network__link--background {
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-network__icon-footer {
-  fill: var(--second-text-color);
-}
-.social-network__link-footer:hover,
-.social-network__link-footer:focus {
-  background-color: var(--color-hover-focus);
-}
-.social-list-item-footer:not(:last-child) {
+.social-network__item:not(:last-child) {
   margin-right: 10px;
 }
-.input-footer {
-  display: flex;
-}
-.footer-input {
+.sign-up {
   margin-left: auto;
 }
-.footer-input-btn {
+.sign-up__area {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.foot-input-mail {
+.sign-up__input {
+  display: flex;
+}
+.sign-up__mail {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -632,11 +617,16 @@ li {
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
   font-size: 16px;
-  line-height: 1.42;
-  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.25;
   background-color: var(--background-color-footer);
+  outline: none;
 }
-.btn-footer {
+.sign-up__mail::placeholder{
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+.sign-up__btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -646,14 +636,19 @@ li {
   border-radius: 4px;
   margin-left: 12px;
 }
-.icon-send {
+.sign-up__icon {
   fill: var(--second-text-color);
   margin-left: 10px;
 }
 
 /*-----------------PORTFOLIO----------*/
 
-.btn-product {
+.our-product__button{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.button {
   padding: 6px 22px 6px 22px;
   margin-right: 8px;
   letter-spacing: 0.03em;
@@ -667,16 +662,11 @@ li {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-product-last {
+.button--last {
   margin-right: 0;
 }
-.btn-product-type {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-.btn-product:hover,
-.btn-product:focus {
+.button:hover,
+.button:focus {
   background-color: var(--color-hover-focus);
   color: var(--second-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -684,40 +674,33 @@ li {
 }
 /*----------------our-product-------------*/
 
-.our-product-item {
+.our-product__field {
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc((100%-60px) / 3);
 }
-.list-product {
+.our-product__link {
   display: block;
   list-style: none;
   text-decoration: none;
   color: var(--main-text-color);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.list-product:hover,
-.list-product:focus {
+.our-product__link:hover,
+.our-product__link:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
-div.our-product:not(:nth-child(3n)) {
+.our-product__card:not(:nth-child(3n)) {
   margin-right: 30px;
 }
-div.our-product:not(:nth-last-child(-n + 3)) {
+.our-product__card:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
-
-.product {
+.our-product__item {
   background-color: var(--second-text-color);
 }
-.product-title {
-  margin-bottom: 4px;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.product-title-card {
+.our-product__description {
   padding-right: 24px;
   padding-left: 24px;
   padding-top: 20px;
@@ -725,23 +708,29 @@ div.our-product:not(:nth-last-child(-n + 3)) {
   border: 1px solid var(--border-color);
   border-top: 0;
 }
-.product-title-descr {
+.our-product__label {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.our-product__type {
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-color);
 }
 /*  -------------- OVERLAY-------------*/
-.overlay {
+.our-product__overlay {
   position: relative;
   overflow: hidden;
 }
-.overlay-text {
+.our-product__overlay-text {
   padding: 63px 24px;
   font-size: 18px;
   line-height: 1.56;
   color: var(--second-text-color);
 }
-.overlay-product {
+.our-product__overlay-card {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -751,7 +740,7 @@ div.our-product:not(:nth-last-child(-n + 3)) {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.list-product:hover .overlay-product,
-.list-product:focus .overlay-product {
+.our-product__link:hover .our-product__overlay-card,
+.our-product__link:focus .our-product__overlay-card {
   transform: translateY(0);
 }
