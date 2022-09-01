@@ -1,126 +1,126 @@
 .page-footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: var(--background-color-footer);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-color-footer);
 }
 
-.page-footer__container {
+/*.page-footer__container {
     display: flex;
     align-items: baseline;
-}
+}*/
 
 .page-footer__logo {
-    padding: 0;
-    margin: 0 0 20px 0;
-    color: var(--second-text-color);
+  padding: 0;
+  margin: 0 0 20px 0;
+  color: var(--second-text-color);
 }
 
 .logo--theme-dark {
-    color: var(--color-hover-focus);
+  color: var(--color-hover-focus);
 }
 
 .page-footer__item {
-    margin-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .page-footer__address,
 .page-footer__contacts {
-    display: block;
-    text-decoration: none;
-    font-style: normal;
-    line-height: 1.71;
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+  line-height: 1.71;
 }
 
 .page-footer__contacts--last {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .page-footer__contacts {
-    color: rgba(255, 255, 255, 0.6);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:focus,
-    &:hover {
-            color: var(--color-hover-focus);
-        }
+  &:focus,
+  &:hover {
+    color: var(--color-hover-focus);
+  }
 }
 
 .page-footer__address {
-    color: var(--second-text-color);
+  color: var(--second-text-color);
 }
 
 .social-network__footer {
-    margin-left: 70px;
+  margin-left: 70px;
 }
 
 .social-network__title {
-    font-weight: bold;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: var(--second-text-color);
-    margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--second-text-color);
+  margin-bottom: 20px;
 }
 
 .social-network__list {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .social-network__link--background {
-    background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social-network__item:not(:last-child) {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .sign-up {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .sign-up__area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.sign-up__input {
-    display: flex;
-}
+/*.sign-up__input {
+  display: flex;
+}*/
 
 .sign-up__mail {
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    color: rgba(255, 255, 255, 0.6);
-    padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  background-color: var(--background-color-footer);
+  outline: none;
+
+  &::placeholder {
     font-size: 16px;
     line-height: 1.25;
-    background-color: var(--background-color-footer);
-    outline: none;
-
-    &::placeholder {
-            font-size: 16px;
-            line-height: 1.25;
-            color: rgba(255, 255, 255, 0.6);
-        }
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .sign-up__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    margin-left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
 }
 
 .sign-up__icon {
-    fill: var(--second-text-color);
-    margin-left: 10px;
+  fill: var(--second-text-color);
+  margin-left: 10px;
 }
