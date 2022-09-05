@@ -39,3 +39,8 @@ li {
 .list {
   list-style: none;
 }
+[type='text'],
+[type='email'],
+[type='tel'] {
+  padding: 0;
+}
