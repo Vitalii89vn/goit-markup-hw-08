@@ -4,12 +4,17 @@
 
 .preferences__list {
   display: block;
-
+max-width: 450px;
+margin-left: auto;
+margin-right: auto;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 768px;
   }
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;}
 }
 .preferences__item {
   margin-bottom: 30px;

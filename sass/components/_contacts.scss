@@ -1,14 +1,36 @@
 .contacts {
+    
+           display: none;
     margin-left: auto;
-     display: flex;
-
+    @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 140px;
+            // padding-top: 21px;
+            //     padding-bottom: 21px;
+            
+            }
+        
+        @media screen and (min-width:768px) and(max-width:1199px) {
+            &:first-child {
+                    margin-bottom: 10px;}
+            }
+        @media screen and (min-width:1200px) {
+            display: flex;
+            flex-wrap: nowrap;
+            max-width: 100%;
+        
+            // padding-top: 32px;
+            //     padding-bottom: 32px;
+        }
 }
+
 .contacts__item {
     display: flex;
     align-items: flex-end;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
     font-weight: 500;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -23,6 +45,10 @@
     &:focus .contacts__icon {
        fill: var(--color-hover-focus);
         }
+            @media screen and (min-width:768px) {
+             &:first-child {
+            margin-bottom: 10px;
+                    }}
 }
 
 

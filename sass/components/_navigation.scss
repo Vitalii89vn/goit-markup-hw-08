@@ -1,5 +1,9 @@
 .navigation{
+    display: none;
+    @media screen and (min-width:768px){
     display: flex;
+    }
+    
 }
 .navigation__link {
     padding-top: 32px;
