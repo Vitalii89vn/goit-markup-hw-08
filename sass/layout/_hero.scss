@@ -1,17 +1,9 @@
-// .hero__container {
-//   display: block;
-//   margin: auto;
-//   height: 100%;
-//   padding-top: 118px;
-//   padding-bottom: 118px;
-
 .hero {
   min-width: 320px;
 
   padding-top: 118px;
   padding-bottom: 118px;
-  // vertical-align: middle;
-  background-color: var(--background-color-footer);
+    background-color: var(--background-color-footer);
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('/images/hero480x400@1x.png');
@@ -61,13 +53,6 @@
     }
   }
 }
-// }
-// .hero {
-//   min-width: 1200px;
-//   padding-bottom: 200px;
-//   padding-top: 200px;
-
-// }
 
 .hero__title {
   letter-spacing: 0.06em;
