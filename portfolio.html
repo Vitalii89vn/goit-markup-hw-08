@@ -78,10 +78,10 @@
 
           <ul class="mobile-menu">
             <li class="mobile-menu__item list">
-              <a href="/index.html" class="mobile-menu__link">Студія</a>
+              <a href="./index.html" class="mobile-menu__link">Студія</a>
             </li>
             <li class="mobile-menu__item list">
-              <a href="/portfolio.html" class="mobile-menu__link mobile-menu__link--current"
+              <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--current"
                 >Портфоліо</a
               >
             </li>
@@ -135,12 +135,38 @@
             <li class="list our-product__item our-product__card">
               <a href="" class="our-product__link">
                 <div class="our-product__overlay">
-                  <img
-                    srcset="./images/project1@1x.jpg, ./images/project1@2x.jpg"
-                    src="./images/project1@1x.jpg"
-                    alt="Сайт з профілями розробників"
-                    class="img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/project2-370@1x.jpg 1x,
+                        ./images/projects/project2-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project2-354@1x.jpg 1x,
+                        ./images/projects/project2-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project2-450@1x.jpg 1x,
+                        ./images/projects/project2-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) and (max-width: 1199px) 354px, (max-width: 767px) 450px, 100vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/projects/project2-450@1x.jpg 1x,
+                        ./images/projects/project2-450@2x.jpg 2x
+                      "
+                      alt="Постер New Orlean vs Golden Star"
+                      class="img"
+                    />
+                  </picture>
                   <div class="our-product__overlay-card">
                     <p class="our-product__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -158,12 +184,47 @@
             <li class="list our-product__item our-product__card">
               <a href="" class="our-product__link">
                 <div class="our-product__overlay">
-                  <img
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/project2-370@1x.jpg 1x,
+                        ./images/projects/project2-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project2-354@1x.jpg 1x,
+                        ./images/projects/project2-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project2-450@1x.jpg 1x,
+                        ./images/projects/project2-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/projects/project2-450@1x.jpg 1x,
+                        ./images/projects/project2-450@2x.jpg 2x
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) and (max-width: 1199px) 354px, (max-width: 767px) 450px, 100vw"
+                      alt="Постер New Orlean vs Golden Star"
+                      class="img"
+                    />
+                  </picture>
+                  <!-- sizes="(min-width:1200px) 354px, 100vw" sizes="(min-width:768px) 350px, 100vw"
+                    sizes="(max-width:767px) 450px, 100vw" -->
+
+                  <!-- <img
                     srcset="./images/project2@1x.jpg, ./images/project2@2x.jpg"
                     src="./images/project2@1x.jpg"
                     alt="Постер New Orlean vs Golden Star"
                     class="img"
-                  />
+                  /> -->
                   <div class="our-product__overlay-card">
                     <p class="our-product__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -387,7 +448,11 @@
                 class="social-network__link social-network__link--background"
                 href="https://www.instagram.com/"
               >
-                <svg class="social-network__icon" width="20" height="20">
+                <svg
+                  class="social-network__icon social-network__icon--color-footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
@@ -396,7 +461,11 @@
               <a
                 class="social-network__link social-network__link--background"
                 href="https://twitter.com/"
-                ><svg class="social-network__icon" width="20" height="20">
+                ><svg
+                  class="social-network__icon social-network__icon--color-footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#icon-twitter"></use></svg
               ></a>
             </li>
@@ -405,7 +474,11 @@
                 class="social-network__link social-network__link--background"
                 href="https://www.facebook.com/"
               >
-                <svg class="social-network__icon" width=" 20" height="20">
+                <svg
+                  class="social-network__icon social-network__icon--color-footer"
+                  width=" 20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#icon-facebook"></use></svg
               ></a>
             </li>
@@ -414,7 +487,11 @@
                 class="social-network__link social-network__link--background"
                 href="https://www.linkedin.com/"
               >
-                <svg class="social-network__icon" width=" 20" height="20">
+                <svg
+                  class="social-network__icon social-network__icon--color-footer"
+                  width=" 20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#icon-linkedin"></use></svg
               ></a>
             </li>
