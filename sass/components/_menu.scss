@@ -22,6 +22,11 @@
     margin-bottom: 32px;
   }
 }
+.mobile-menu__container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 .mobile-menu__link {
   font-weight: 500;
   font-size: 40px;
@@ -33,6 +38,10 @@
   &:not(:last-child) {
     margin-bottom: 32px;
   }
+}
+.mobile-menu__contacts {
+  display: flex;
+  flex-direction: column;
 }
 .mobile-menu__link--current {
   color: #2196f3;
@@ -144,6 +153,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  flex-grow: 1;
 }
 
 .mobile-menu .link {
